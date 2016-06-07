@@ -1,8 +1,6 @@
 import numpy as np
 
 class tools:
-    def __init__(self):
-        return
 
     def setdiffn(self, array1, array2):
         """Version of Matlab/R's 2D SETDIFF for ND arrays only. Reduces ND array down to 2D and returns 2D array (last two dims of ND arrays)
