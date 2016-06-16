@@ -2,7 +2,7 @@ import numpy as np
 
 #---------- SET-DIFFERENCE OF ARRAYS -------------------------------------
 def setdiff(a1, a2):
-    """Simpler version of Matlab/R's SETDIFF for 2D arrays only """
+    """Simpler version of Matlab/R's SETDIFF for ND arrays """
     a1 = a1.ravel().reshape(-1,a1.shape[-1])
     a2 = a2.ravel().reshape(-1,a1.shape[-1])
     a1_rows = a1.view([('', a1.dtype)] * a1.shape[-1])
@@ -14,7 +14,7 @@ def setdiff(a1, a2):
 
 #---------- INTERSECTION OF ARRAYS --------------------------------------
 def intersect(a1, a2):
-    """Simpler version of Matlab/R's INTERSECT for 2D arrays only """
+    """Simpler version of Matlab/R's INTERSECT for ND arrays """
     a1 = a1.ravel().reshape(-1,a1.shape[-1])
     a2 = a2.ravel().reshape(-1,a1.shape[-1])
     a1_rows = a1.view([('', a1.dtype)] * a1.shape[-1])
