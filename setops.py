@@ -1,4 +1,5 @@
 import numpy as np
+import itertools
 
 #---------- SET-DIFFERENCE OF ARRAYS -------------------------------------
 def setdiff(a1, a2):
